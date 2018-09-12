@@ -1,0 +1,16 @@
+<%= link_to("<< Back to Schools", schools_path, :class => 'back-link') %>
+
+<div class ="school edit">
+  <h2>Update School</h2>
+
+  <%= simple_form_for @school do |f| %>
+      <%= f.error_notification %>
+
+      <%= f.input :name %>
+      <%= f.input :dean_name %>
+      <%= f.input :position %>
+
+      <%= f.button :submit %>
+  <% end %>
+
+</div>
