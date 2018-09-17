@@ -1,0 +1,18 @@
+<%= link_to("<< Back to Departments", departments_path, :class => 'back-link') %>
+
+<div class ="department edit">
+  <h2>Update Department</h2>
+
+  <%= simple_form_for @department do |f| %>
+      <%= f.error_notification %>
+
+      <%= f.input :name %>
+      <%= f.input :position %>
+      <%= f.input :head_name %>
+      <%= f.input :description %>
+      <%= f.input :capacity %>
+
+      <%= f.button :submit %>
+  <% end %>
+
+</div>

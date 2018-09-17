@@ -69,11 +69,11 @@ a.action.large {
 .back-link {
   font-size: 0.8em;
   margin-bottom: 1em;
+  text-decoration: underline;
 }
 
 .form-buttons {
   text-align: center;
-  margin: 1em 0;
 }
 
 .index {
@@ -113,6 +113,11 @@ span.status {
 .field_with_errors {
   label { color: #AA0000; }
   input { border: 2px solid red; }
+}
+
+.error_notification {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #error-explanation {

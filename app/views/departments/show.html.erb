@@ -1,0 +1,33 @@
+<%= link_to("<< Back to Departments", departments_path, :class => 'back-link') %>
+
+<div class="departments show">
+  <h2>Department Details</h2>
+
+  <table summary="Department detail view">
+    <tr>
+      <th>Name</th>
+      <td><%= @department.name %></td>
+    </tr>
+    <tr>
+      <th>Decsription</th>
+      <td><%= @department.description %></td>
+    </tr>
+    <tr>
+      <th>Head Name</th>
+      <td><%= @department.head_name %></td>
+    </tr>
+    <tr>
+      <th>Capacity</th>
+      <td><%= @department.capacity %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @department.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @department.updated_at %></td>
+    </tr>
+  </table>
+
+</div>

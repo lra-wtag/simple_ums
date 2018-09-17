@@ -1,0 +1,16 @@
+
+<%= link_to("<< Back to Departments", departments_path, :class => 'back-link') %>
+
+<div class ="department delete">
+  <h2>Delete Department</h2>
+
+  <%= simple_form_for(@department, :method => 'delete') do |f| %>
+
+      <p class="center">Are you sure you want to permanently delete this Department? </p>
+
+      <p class="reference-name, center" ><%= f.object.name %></p>
+
+      <%= f.submit("Delete Department") %>
+  <% end %>
+
+</div>

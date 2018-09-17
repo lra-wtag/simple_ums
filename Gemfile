@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'simple_form'
+gem 'factory_bot'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -27,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+gem 'rake', '< 11.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -61,3 +64,16 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'rails-controller-testing'
+
+group :development, :test do
+ gem "rspec-rails"
+ gem "factory_girl_rails", "~> 4.4.1"
+end
+
+ group :test do
+ gem "faker", "~> 1.4.3"
+ gem "database_cleaner", "~> 1.3.0"
+ gem 'shoulda-matchers', require: false
+ gem "launchy", "~> 2.4.2"
+end

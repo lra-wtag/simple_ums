@@ -1,5 +1,6 @@
 class SchoolsController < ApplicationController
 
+  before_action :set_school, only: [:show, :edit, :update, :destroy]
 
   def index
     @schools = School.sorted
@@ -52,6 +53,10 @@ class SchoolsController < ApplicationController
   private
   def school_params
     params.require(:school).permit(:name, :dean_name, :position)
+  end
+
+  def set_school
+    @school = School.find(params[:id])
   end
 
 end

@@ -1,0 +1,31 @@
+<div class="department index">
+  <h2> Departments </h2>
+
+  <%= link_to("Add New Departments", new_department_path, :class => 'action new') %>
+  <br></br>
+
+  <table class="listing" summary="Department List">
+    <tr class="header">
+      <th>#</th>
+      <th class="center">Department Name</th>
+      <th class="center">Description</th>
+      <th class="center">Head Name</th>
+      <th class="center">Capacity</th>
+      <th class="center">Actions</th>
+    </tr>
+    <% @departments.each do |department| %>
+        <tr>
+          <td><%= department.position %></td>
+          <td><%= department.name %></td>
+          <td><%= department.description %></td>
+          <td><%= department.head_name %></td>
+          <td><%= department.capacity %></td>
+          <td class="actions">
+            <%= link_to("Show", department_path(department), :class => 'action show') %>
+            <%= link_to("Edit", edit_department_path(department), :class => 'action edit') %>
+            <%= link_to("Delete", delete_department_path(department), :class => 'action delete') %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>
