@@ -1,0 +1,1781 @@
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 09:21:24 +0600
+  
+RuntimeError (Cannot load `Rails.application.database_configuration`:
+Could not load database configuration. No such file - ["config/database.yml"]):
+  
+railties (5.2.1) lib/rails/application/configuration.rb:185:in `database_configuration'
+activerecord (5.2.1) lib/active_record/railtie.rb:133:in `block (2 levels) in <class:Railtie>'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:71:in `instance_eval'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:71:in `block in execute_hook'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:62:in `with_execution_control'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:67:in `execute_hook'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (5.2.1) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+activerecord (5.2.1) lib/active_record/base.rb:328:in `<module:ActiveRecord>'
+activerecord (5.2.1) lib/active_record/base.rb:27:in `<main>'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+activesupport (5.2.1) lib/active_support/dependencies.rb:287:in `block in require'
+activesupport (5.2.1) lib/active_support/dependencies.rb:253:in `load_dependency'
+activesupport (5.2.1) lib/active_support/dependencies.rb:287:in `require'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 09:23:32 +0600
+  [1m[35m (37.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (27.3ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (43.6ms)
+Completed 200 OK in 1023ms (Views: 968.8ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 09:24:38 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (18.8ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 62ms (Views: 35.1ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 09:24:41 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (116.4ms)
+Completed 200 OK in 153ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 09:24:42 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 73ms (Views: 29.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/1" for 127.0.0.1 at 2018-09-18 09:24:43 +0600
+Processing by DepartmentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartment Load (18.5ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:10
+  Rendering departments/show.html.erb within layouts/application
+  Rendered departments/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 52ms (Views: 24.9ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 09:24:45 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (2.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 2.5ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 12:21:55 +0600
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 80ms (Views: 75.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 12:21:56 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 12:21:58 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (1.0ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:01:56 +0600
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (6.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 52ms (Views: 43.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 13:01:57 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:01:59 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/departments/1" for 127.0.0.1 at 2018-09-18 13:02:00 +0600
+Processing by DepartmentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:10
+  Rendering departments/show.html.erb within layouts/application
+  Rendered departments/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:02:01 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.7ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/departments/1/edit" for 127.0.0.1 at 2018-09-18 13:02:02 +0600
+Processing by DepartmentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:28
+  Rendering departments/edit.html.erb within layouts/application
+  Rendered departments/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:02:05 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/1/delete" for 127.0.0.1 at 2018-09-18 13:02:07 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 21.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:02:08 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2018-09-18 13:02:24 +0600
+  
+ActionController::RoutingError (No route matches [GET] "/subjects"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:02:26 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.6ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2018-09-18 13:02:29 +0600
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 37ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:02:31 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (2.8ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:02:39 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (1.0ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:03:25 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/schools/22/edit" for 127.0.0.1 at 2018-09-18 13:07:00 +0600
+Processing by SchoolsController#edit as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT  `schools`.* FROM `schools` WHERE `schools`.`id` = 22 LIMIT 1[0m
+  ↳ app/controllers/schools_controller.rb:59
+  [1m[36mCACHE School Load (0.0ms)[0m  [1m[34mSELECT  `schools`.* FROM `schools` WHERE `schools`.`id` = 22 LIMIT 1[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/schools_controller.rb:29
+  Rendering schools/edit.html.erb within layouts/application
+  Rendered schools/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:07:02 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 13:07:05 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:07:10 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:28:13 +0600
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.7ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 13:28:14 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (1.7ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:55:30 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 13:55:33 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 13:55:53 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xS+dGObJokzGWXuOPjxznzI4kgZa8AhSNddy4JJTyqGa4odvvfg+r3KOlfe3dplRHC1V710Aj5Gl4dsjyNGNLA==", "department"=>{"name"=>"mmk", "position"=>"13", "head_name"=>"khjh", "description"=>"", "capacity"=>"500"}, "commit"=>"Create Department"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'mmk' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 13 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'khjh' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (0.5ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('mmk', 13, 'khjh', '', 500, '2018-09-18 07:55:53', '2018-09-18 07:55:53')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 24ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:55:53 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/8/delete" for 127.0.0.1 at 2018-09-18 13:55:56 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/8" for 127.0.0.1 at 2018-09-18 13:55:58 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxPdN4w2MxqwoWa1MJ/kkn0MZ3N155l/HZT8FZnwqaZkQ3V6w8NFgUymhLFipV7dg39r1JRovfXsluPTBc14zw==", "commit"=>"Delete Department", "id"=>"8"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 8 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.4ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 8[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:55:58 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:56:00 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:56:28 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 13:56:29 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 13:56:43 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T+xHdoDgD8yYHJQxHp8MDb9PMZ9wnKl0a4/fFAWBwk4QIV0B29GTLyzLekiX1ebDkVr2dndsLrf7uXbXXwOFww==", "department"=>{"name"=>"lll", "position"=>"13", "head_name"=>"hghjg", "description"=>"", "capacity"=>"450"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'lll' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 13 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'hghjg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 40ms (Views: 32.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:57:11 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.7ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 13:57:12 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 13:57:21 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s82xMjAugTpRHcuCL9cSk+ZUwJyWuyAkvB6z2TqD/t3sAKtFax8d2eXKJfumnfhdyEEHdZFLp+csKBoaYAG5UA==", "department"=>{"name"=>"hjh", "position"=>"12", "head_name"=>"fggfgfg", "description"=>"", "capacity"=>"45"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'hjh' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 12 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'fggfgfg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (0.5ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('hjh', 12, 'fggfgfg', '', 45, '2018-09-18 07:57:21', '2018-09-18 07:57:21')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 18ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:57:21 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/9" for 127.0.0.1 at 2018-09-18 13:57:24 +0600
+Processing by DepartmentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:10
+  Rendering departments/show.html.erb within layouts/application
+  Rendered departments/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 21.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:57:25 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/9/delete" for 127.0.0.1 at 2018-09-18 13:57:28 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/9" for 127.0.0.1 at 2018-09-18 13:57:29 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YW8ptM3T6NCLtKOzsdXYyeiPiN5Y58SQB/jpqxinVQP1fZnAeiiJV90t4RATe3U0M7z5AyzC39XJztoO60JOrg==", "commit"=>"Delete Department", "id"=>"9"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 9 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.3ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 9[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:57:29 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 13:57:31 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:01:38 +0600
+Processing by DepartmentsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'SizeValidator'):
+  
+app/models/department.rb:8:in `<class:Department>'
+app/models/department.rb:1:in `<main>'
+app/controllers/departments_controller.rb:5:in `index'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:05:45 +0600
+Processing by DepartmentsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'TooLongValidator'):
+  
+app/models/department.rb:8:in `<class:Department>'
+app/models/department.rb:1:in `<main>'
+app/controllers/departments_controller.rb:5:in `index'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:06:01 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 45ms (Views: 38.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:06:23 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:06:25 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:06:44 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfIdZI2u2yXQX00smNta0CzCao+1+jMfvg3mi8LMzwZCPwcT1p9HxmSIo1URkbAeAtetZrIKtNwuO09ImE6Iiw==", "department"=>{"name"=>"hu", "position"=>"90", "head_name"=>"loop", "description"=>"", "capacity"=>"780"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'hu' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 90 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'loop' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 39ms (Views: 30.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:07:44 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:07:45 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:07:53 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K+pUALDaN/WJDjj3C8JmfdnscVVWI13A23LaCSrJMFJ0J0536+urFj3Z1o6CiIyz9/m2vFHT2gNLRHPKcEt33w==", "department"=>{"name"=>"hyh", "position"=>"56", "head_name"=>"ttgtg", "description"=>"", "capacity"=>"3"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'hyh' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 56 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ttgtg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 48ms (Views: 38.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:08:02 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pLxMMelL2aTyQPHgml8wbAvFJW/M5Z/hOens4GiRH8uScTS4KiT58hSBj3JnOPjEI0ze3NMDwbzt8p9+9br4Ew==", "department"=>{"name"=>"hyh", "position"=>"56", "head_name"=>"ttgtg", "description"=>"", "capacity"=>"45"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'hyh' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 56 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ttgtg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (0.7ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('hyh', 56, 'ttgtg', '', 45, '2018-09-18 08:08:02', '2018-09-18 08:08:02')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 17ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:08:02 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/10/delete" for 127.0.0.1 at 2018-09-18 14:08:05 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/10" for 127.0.0.1 at 2018-09-18 14:08:06 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vzNm/qX22ajP3hmfCAJjogAQqxfzBQWLrQO+Zrjo5MA14Kurc0WttIy09zLWtunnqCsgITjFq/QtMzK2dmj4ow==", "commit"=>"Delete Department", "id"=>"10"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 10 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.3ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 10[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:08:06 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:08:08 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:08:18 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sL/ECaIG5OOWWq3a/rQAvQe7pZHJ5a8e681ZGepq6K7vct5++Td4ACKNQ6N3/upzKa5ieM4VKN17+/DasOivIw==", "department"=>{"name"=>"tt", "position"=>"55", "head_name"=>"ttrtrtr", "description"=>"", "capacity"=>"7890"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'tt' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 55 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ttrtrtr' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 52ms (Views: 40.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:08:23 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:10:31 +0600
+Processing by DepartmentsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/FAR-wtag/Documents/simple_ums/app/models/department.rb:8: syntax error, unexpected '{', expecting keyword_end
+...h => {minimum: 2, maximum: 3} { message : "min capacity is 5...
+...                              ^
+/Users/FAR-wtag/Documents/simple_ums/app/models/department.rb:8: syntax error, unexpected '}', expecting keyword_end
+...s 50 and max capacity is 550" }
+...                              ^):
+  
+app/models/department.rb:8: syntax error, unexpected '{', expecting keyword_end
+app/models/department.rb:8: syntax error, unexpected '}', expecting keyword_end
+app/controllers/departments_controller.rb:5:in `index'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:11:53 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 39ms (Views: 26.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:11:55 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:12:09 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mD3J3GYxcp+zmYShPwdE9Ykh3lD1b8ao6G9kone+gSHH8NOrPQDufAdOati2Ta47pzQZufKfQWt4Wc1hLTzGrA==", "department"=>{"name"=>"gtg", "position"=>"445", "head_name"=>"fgfgfg", "description"=>"", "capacity"=>"5677"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'gtg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 445 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'fgfgfg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 41ms (Views: 30.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:12:16 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9My4lo99JyP62cyIVsH7lZ/4NbDc7YDRLfUCiPDtX4VHkprmVLUymkqGaDcPM9GfvYbZdyV6F6QrKeUvuhSpg==", "department"=>{"name"=>"gtg", "position"=>"445", "head_name"=>"fgfgfg", "description"=>"", "capacity"=>"67"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'gtg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 445 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'fgfgfg' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (0.6ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('gtg', 445, 'fgfgfg', '', 67, '2018-09-18 08:12:16', '2018-09-18 08:12:16')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 16ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:12:16 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:12:18 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:12:21 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.9ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/departments/11/delete" for 127.0.0.1 at 2018-09-18 14:12:22 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 11 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/11" for 127.0.0.1 at 2018-09-18 14:12:23 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S3peGRgb8nwANRr8aoy+uzqKqDIgYHk7waWJW/9uzJ7ggbpFw4abbTRr9ALo9eara6DlfyoM5EJILrm9xxNrvQ==", "commit"=>"Delete Department", "id"=>"11"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 11 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.4ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 11[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:12:23 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:12:25 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:12:59 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:15:07 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:15:19 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 32ms (Views: 27.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:15:20 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:15:29 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c/022lJtmTod/CWVgtZPDPi8AEhnEEmjAWCj2ntzonYsMCytCVwF2akry+wLnKXC1qnHoWDgzmCRVgoZIfHl+w==", "department"=>{"name"=>"ty", "position"=>"56", "head_name"=>"yythb", "description"=>"", "capacity"=>"34"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'ty' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 56 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'yythb' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 41ms (Views: 28.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:15:36 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y7feJYwxYh9jnkdFnmJGvAgK2N1rhC5S7jfXTtUr6vX9eqasT15CSYVfOddjBY4UIIMjbnRicA86LKTQSAANLQ==", "department"=>{"name"=>"ty", "position"=>"56", "head_name"=>"yythb", "description"=>"", "capacity"=>"3467"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'ty' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 56 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'yythb' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 54ms (Views: 41.2ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:15:38 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j+aqmF1HFi49Zy8wH4yRjnBdnYe9VrYMFdthc8/dPeu5K9IRnig2eNumUaLi61kmWNRmNKKw6FHBwBLtUvbaMw==", "department"=>{"name"=>"ty", "position"=>"56", "head_name"=>"yythb", "description"=>"", "capacity"=>"3467"}, "commit"=>"Create Department"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'ty' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 56 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'yythb' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 43ms (Views: 30.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:16:04 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:16:05 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:16:19 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gl6qRMJZf26i2jMQCltCqSBhO4CW7H/5Ax4Mt51K+eLdk7AzmWjjjRYN3WmDEahnDnT8aZEc+DqTKKV0x8i+bw==", "department"=>{"name"=>"tyyu", "position"=>"566", "head_name"=>"tytytrwe3r4", "description"=>"", "capacity"=>"456"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'tyyu' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 566 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'tytytrwe3r4' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 45ms (Views: 34.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:17:40 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 35ms (Views: 27.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:17:41 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:17:50 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SgktbsnGeG/Bc46gPq/M/G2WIvvkrJa52STtbteeAuYVxDcZkvfkjHWkYNm35SYyQ4PlEuNcEXpJEkStjRxFaw==", "department"=>{"name"=>"uio", "position"=>"67", "head_name"=>"wew", "description"=>"", "capacity"=>"456"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'uio' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 67 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'wew' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (0.7ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('uio', 67, 'wew', '', 456, '2018-09-18 08:17:50', '2018-09-18 08:17:50')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 20ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:17:50 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:17:54 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:18:03 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dJe6ogrqpnUJKpljKRQ67zCaHXdeEivZrDWQf0Iz3DArWqDVUds6lr39dxqgXtAhHo/anlnirBo8Azm8GLGbvQ==", "department"=>{"name"=>"defr", "position"=>"34", "head_name"=>"ggth", "description"=>"", "capacity"=>"12"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'defr' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 34 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ggth' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 40ms (Views: 32.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:18:09 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GzhQp4jRHxgnzuYTDZqnjynKpv6qam+HVieJC7pRx2Qt9SguS74/TsEPmIHw/W8nAUNdTbWMMdqCPPqVJ3ogvA==", "department"=>{"name"=>"defr", "position"=>"34", "head_name"=>"ggth", "description"=>"", "capacity"=>"987"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'defr' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 34 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ggth' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 45ms (Views: 32.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:18:14 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kKngjlqFlKrL0zV5Fx9Lj4uwg2Wn0/GAwV2e7bcRlaSmZJgHmeq0/C0SS+vqeIMnozl41rg1r90VRu1zKjpyfA==", "department"=>{"name"=>"defr", "position"=>"34", "head_name"=>"ggth", "description"=>"", "capacity"=>"98"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'defr' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 34 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ggth' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Create (2.6ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('defr', 34, 'ggth', '', 98, '2018-09-18 08:18:14', '2018-09-18 08:18:14')[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:19
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 15ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:18:14 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/departments/12/delete" for 127.0.0.1 at 2018-09-18 14:18:16 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/12" for 127.0.0.1 at 2018-09-18 14:18:17 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KaibDnGqymJ+Ya8P7gJdOsF8eLguvR5rgEnGQue3hdxIiUBhuRngTS7vv9/3OMSsj8EQuQJ2p40vOAm/mLRKA==", "commit"=>"Delete Department", "id"=>"12"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 12 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.4ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 12[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:18:17 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/13/delete" for 127.0.0.1 at 2018-09-18 14:18:18 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:42
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/13" for 127.0.0.1 at 2018-09-18 14:18:19 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fHKsVR0mxSVVYVNUzATiI1JdR4+0OLjKhVkDQre90UKhIr5QbdlFeJTSd9g1fMAL407ajGxLdCFYrnotUXk4zQ==", "commit"=>"Delete Department", "id"=>"13"}
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 13 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[36mDepartment Destroy (0.7ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 13[0m
+  ↳ app/controllers/departments_controller.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:47
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:18:19 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:18:21 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.8ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:20:37 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:20:39 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:25:08 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:25:08 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:25:19 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (2.0ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:38:01 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 50ms (Views: 39.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:39:03 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:39:18 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (1.0ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:41:36 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 14:41:38 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:43:10 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:45:21 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:45:25 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8mgmINQxtkGuFBkmTzc6VXeqYxVo8d5mxWG+QcQ/7dKtpTxXjwAqohrD91/GfdCbWb+k/G8BWaVVVxeCnr2qXw==", "department"=>{"name"=>"", "position"=>"", "head_name"=>"", "description"=>"", "capacity"=>"3"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` IS NULL LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 33.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:45:39 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 34ms (Views: 28.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 14:45:41 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:45:45 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NQXYTfLn/2lg566T/L2eF0Thj2RaJPJIrCpy4YYV+lFqyMI6qdZjitQwQOp193TZavRIjV3UdYs8HNsi3Je93A==", "department"=>{"name"=>"", "position"=>"", "head_name"=>"", "description"=>"", "capacity"=>"67"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` IS NULL LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 47ms (Views: 37.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:45:49 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YgMNGMgFXCU0GNcM5NOWOpA+JQv55L1mQ9VWlUl3VBlUznWRC2p8c9LZqZ4ZtF6SuLfeuOYC4zuXziUL1FyzwQ==", "department"=>{"name"=>"", "position"=>"", "head_name"=>"", "description"=>"", "capacity"=>"6799"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` IS NULL LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 47ms (Views: 32.3ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:45:58 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FtKbkxG8S3HnI+gBIyvdWbt61ZifccAPhcweUkeCos4gH+Ma0tNrJwHilpPeTBXxk/MuK4CXnlJR123M2qlFFg==", "department"=>{"name"=>"", "position"=>"", "head_name"=>"", "description"=>"", "capacity"=>"6"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` IS NULL LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY '' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 51ms (Views: 35.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 14:46:09 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/p4liSgP6QCfW5Gg2LvHIXnFEhOPcpqYBwioXBxYPULIU10A62DJVnma7zIl3A+JUUzpoJCUxMXTE9vCgXPamg==", "department"=>{"name"=>"CSE", "position"=>"1", "head_name"=>"Sarwar Hossain", "description"=>"", "capacity"=>"6"}, "commit"=>"Create Department"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'CSE' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 1 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[36mDepartment Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'Sarwar Hossain' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:19
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 56ms (Views: 41.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:46:44 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:51:06 +0600
+Processing by DepartmentsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  
+app/models/department.rb:7:in `<class:Department>'
+app/models/department.rb:1:in `<main>'
+app/controllers/departments_controller.rb:5:in `index'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 14:52:01 +0600
+Processing by DepartmentsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (The provided regular expression is using multiline anchors (^ or $), which may present a security risk. Did you mean to use \A and \z, or forgot to add the :multiline => true option?):
+  
+app/models/department.rb:7:in `<class:Department>'
+app/models/department.rb:1:in `<main>'
+app/controllers/departments_controller.rb:5:in `index'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:16:25 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 51ms (Views: 40.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 15:16:28 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:21:41 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:33:33 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+Completed 404 Not Found in 6ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Department without an ID):
+  
+app/controllers/departments_controller.rb:60:in `set_department'
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:34:25 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:34:26 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:35:34 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 15:35:36 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:35:37 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.7ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/departments/new" for 127.0.0.1 at 2018-09-18 15:35:37 +0600
+Processing by DepartmentsController#new as HTML
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 15:35:48 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VNX+bcycWat4TfkjCgSK5s0oyQjDpXDujKSWpg4qo1oLGOQal63FSMyaF1qDTmAo4z0O4cRV9y0ckj9lVKjk1w==", "department"=>{"name"=>"we", "position"=>"3333", "head_name"=>"ffffff", "description"=>"", "capacity"=>"34"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'we' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 3333 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ffffff' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/departments_controller.rb:21
+  Rendering departments/new.html.erb within layouts/application
+  Rendered departments/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 41ms (Views: 33.0ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/departments" for 127.0.0.1 at 2018-09-18 15:35:51 +0600
+Processing by DepartmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O3Ulr3z9cEg+sAmCFDWDxjYJAyXUXbxSM1AvMFOgSzUNuF0mv5JQHthxdxDpUktuHoD4lsu74g/nS1yuzous7Q==", "department"=>{"name"=>"we", "position"=>"3333", "head_name"=>"ffffff", "description"=>"", "capacity"=>"344"}, "commit"=>"Create Department"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`name` = BINARY 'we' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`position` = 3333 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `departments` WHERE `departments`.`head_name` = BINARY 'ffffff' LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[36mDepartment Create (0.6ms)[0m  [1m[32mINSERT INTO `departments` (`name`, `position`, `head_name`, `description`, `capacity`, `created_at`, `updated_at`) VALUES ('we', 3333, 'ffffff', '', 344, '2018-09-18 09:35:51', '2018-09-18 09:35:51')[0m
+  ↳ app/controllers/departments_controller.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:21
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:35:51 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments/14/delete" for 127.0.0.1 at 2018-09-18 15:35:55 +0600
+Processing by DepartmentsController#delete as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:44
+  Rendering departments/delete.html.erb within layouts/application
+  Rendered departments/delete.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/departments/14" for 127.0.0.1 at 2018-09-18 15:35:56 +0600
+Processing by DepartmentsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8ylh00ww/Of6bBMLeRmUXOEiFUsF2QRZVkrlBpWa6yKUBKs04XRoTbD5Rhdj3af+2y5qcHZhqyL4Ono/JMcc3g==", "commit"=>"Delete Department", "id"=>"14"}
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT  `departments`.* FROM `departments` WHERE `departments`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/departments_controller.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/departments_controller.rb:49
+  [1m[36mDepartment Destroy (0.3ms)[0m  [1m[31mDELETE FROM `departments` WHERE `departments`.`id` = 14[0m
+  ↳ app/controllers/departments_controller.rb:49
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/departments_controller.rb:49
+Redirected to http://localhost:3000/departments
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:35:56 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:35:57 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:39:00 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:39:02 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 15:53:36 +0600
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 15:53:37 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (1.4ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 36ms (Views: 29.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 16:20:05 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 16:43:48 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.6ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 16:43:50 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.4ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 16:47:51 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 16:48:58 +0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 40ms (Views: 36.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/departments" for 127.0.0.1 at 2018-09-18 17:29:42 +0600
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(REPLACE(REPLACE(REPLACE(@@sql_mode, 'STRICT_TRANS_TABLES', ''), 'STRICT_ALL_TABLES', ''), 'TRADITIONAL', ''), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/FAR-wtag/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT `departments`.* FROM `departments` ORDER BY position ASC[0m
+  ↳ app/views/departments/index.html.erb:16
+  Rendered departments/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 17:29:43 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.6ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/schools/new" for 127.0.0.1 at 2018-09-18 17:29:45 +0600
+Processing by SchoolsController#new as HTML
+  Rendering schools/new.html.erb within layouts/application
+  Rendered schools/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/schools" for 127.0.0.1 at 2018-09-18 17:29:47 +0600
+Processing by SchoolsController#index as HTML
+  Rendering schools/index.html.erb within layouts/application
+  [1m[36mSchool Load (0.5ms)[0m  [1m[34mSELECT `schools`.* FROM `schools` ORDER BY position ASC[0m
+  ↳ app/views/schools/index.html.erb:15
+  Rendered schools/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+
