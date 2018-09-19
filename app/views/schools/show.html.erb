@@ -1,8 +1,6 @@
-<%= link_to("<< Back to Schools", schools_path, :class => 'back-link') %>
-
+<%= link_to("<< Back to Schools", schools_path) %>
 <div class="schools show">
-  <h2>School Details</h2>
-
+  <h2><%= t('.details') %></h2>
   <table summary="School detail view">
     <tr>
       <th>Name</th>
@@ -21,5 +19,4 @@
       <td><%= @school.updated_at %></td>
     </tr>
   </table>
-
 </div>

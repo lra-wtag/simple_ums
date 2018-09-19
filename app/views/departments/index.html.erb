@@ -1,12 +1,10 @@
 <div class="department index">
-  <h2> Departments </h2>
-
-  <%= link_to("Add New Departments", new_department_path, :class => 'action new') %>
-  <br></br>
-
+  <h2>Departments</h2>
+  <%= link_to("Add New Departments", new_department_path) %>
+  <br /><br />
   <table class="listing" summary="Department List">
     <tr class="header">
-      <th>#</th>
+      <th>Serial No.</th>
       <th class="center">Department Name</th>
       <th class="center">Description</th>
       <th class="center">Head Name</th>
@@ -21,9 +19,9 @@
           <td><%= department.head_name %></td>
           <td><%= department.capacity %></td>
           <td class="actions">
-            <%= link_to("Show", department_path(department), :class => 'action show') %>
-            <%= link_to("Edit", edit_department_path(department), :class => 'action edit') %>
-            <%= link_to("Delete", delete_department_path(department), :class => 'action delete') %>
+            <%= link_to("Show", department_path(department)) %>
+            <%= link_to("Edit", edit_department_path(department)) %>
+            <%= link_to("Delete", delete_department_path(department)) %>
           </td>
         </tr>
     <% end %>

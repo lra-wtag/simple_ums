@@ -1,8 +1,6 @@
-<%= link_to("<< Back to Departments", departments_path, :class => 'back-link') %>
-
+<%= link_to("<< Back to Departments", departments_path) %>
 <div class="departments show">
-  <h2>Department Details</h2>
-
+  <h2><%= t('.details') %></h2>
   <table summary="Department detail view">
     <tr>
       <th>Name</th>
@@ -29,5 +27,4 @@
       <td><%= @department.updated_at %></td>
     </tr>
   </table>
-
 </div>

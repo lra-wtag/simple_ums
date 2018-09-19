@@ -3,10 +3,6 @@ FactoryGirl.define do
        sequence (:name) {|n| "School of Law#{n}"}
        sequence (:dean_name) {|n| "Mohammed Anwer#{n}"}
        sequence (:position) {|n| "1#{n}"}
-
-     # name Faker::Name.name
-     # dean_name Faker::Name.name
-     # position Faker::Number.digit
-
   end
 end
+

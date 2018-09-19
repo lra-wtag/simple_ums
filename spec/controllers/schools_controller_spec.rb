@@ -1,7 +1,5 @@
 require 'rails_helper'
-
 RSpec.describe SchoolsController, type: :controller do
-
   let!(:sch) do
     create(:school, name: 'School of Law', dean_name: 'Rifat Reza',  position: '5')
   end
@@ -21,37 +19,37 @@ RSpec.describe SchoolsController, type: :controller do
   end
 
   describe 'GET #show' do
-    it "displays the requested school to @school" do
-      get :show, params: {id: sch}
+    it 'displays the requested school to @school' do
+      get :show, params: { id: sch }
       expect(assigns(:school)).to eq sch
     end
 
-    it "renders the :show template" do
-      get :show, params: {id: sch}
+    it 'renders the :show template' do
+      get :show, params: { id: sch }
       expect(response).to render_template :show
     end
   end
 
-  describe'GET #new' do
-    it "assigns a new School to @school" do
+  describe 'GET #new' do
+    it 'assigns a new School to @school' do
       get :new
       expect(assigns(:school)).to be_a_new(School)
     end
 
-    it "renders the :new template" do
+    it 'renders the :new template' do
       get :new
       expect(response).to render_template :new
     end
   end
 
-  describe'GET #edit'do
-    it "assigns the requested school to @school" do
-      get :edit, params: {id: sch}
+  describe 'GET #edit' do
+    it 'assigns the requested school to @school' do
+      get :edit, params: { id: sch }
       expect(assigns(:school)).to eq sch
     end
 
-    it "renders the :edit template" do
-      get :edit, params: {id: sch}
+    it 'renders the :edit template' do
+      get :edit, params: { id: sch }
       expect(response).to render_template :edit
     end
   end
@@ -115,13 +113,13 @@ RSpec.describe SchoolsController, type: :controller do
 
   describe 'DELETE #destroy' do
     it 'deletes the school' do
-      expect{ delete :destroy, params: { id: sch} }.to change(School, :count).by(-1)
+      expect{ delete :destroy, params: { id: sch } }.to change(School, :count).by(-1)
     end
 
     it 'redirects to schools#index' do
-      delete :destroy, params: { id: sch}
+      delete :destroy, params: { id: sch }
       expect(response).to redirect_to schools_path
     end
   end
-
 end
+

@@ -1,14 +1,11 @@
-<%= link_to("<< Back to Schools", schools_path, :class => 'back-link') %>
-
+<%= link_to("<< Back to Schools", schools_path) %>
 <div class ="schools new">
   <h2>Create New School</h2>
   <%= simple_form_for @school do |f| %>
       <%= f.error_notification %>
-
       <%= f.input :name %>
       <%= f.input :dean_name %>
       <%= f.input :position %>
-
       <%= f.button :submit %>
   <% end %>
 </div>

@@ -1,15 +1,10 @@
 class SchoolsController < ApplicationController
-
-  before_action :set_school, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_school, only: [:show, :edit, :update, :delete, :destroy]
   def index
     @schools = School.sorted
-    render (:index)
   end
 
-  def show
-    @school = School.find(params[:id])
-  end
+  def show; end
 
   def new
     @school = School.new
@@ -18,35 +13,29 @@ class SchoolsController < ApplicationController
   def create
     @school = School.new(school_params)
     if @school.save
-      flash[:notice] = "School created successfully!"
+      flash[:notice] = t('.school_create')
       redirect_to(schools_path)
     else
-      render(:new)
+      render :new
     end
   end
 
-  def edit
-    @school = School.find(params[:id])
-  end
+  def edit; end
 
   def update
-    @school = School.find(params[:id])
     if @school.update_attributes(school_params)
-      flash[:notice] = "School updated successfully!"
+      flash[:notice] = t('.school_edit')
       redirect_to(schools_path(@school))
     else
-      render('edit')
+      render :edit
     end
   end
 
-  def delete
-    @school = School.find(params[:id])
-  end
+  def delete; end
 
   def destroy
-    @school = School.find(params[:id])
     @school.destroy
-    flash[:notice] = "School '#{@school.name}' destroyed successfully!"
+    flash[:notice] = t('.school_delete')
     redirect_to(schools_path)
   end
 
@@ -54,9 +43,8 @@ class SchoolsController < ApplicationController
   def school_params
     params.require(:school).permit(:name, :dean_name, :position)
   end
-
   def set_school
     @school = School.find(params[:id])
   end
-
 end
+
