@@ -1,4 +1,4 @@
-<%= link_to("<< Back to Departments", departments_path) %>
+<%= link_to("<< Back to Departments", departments_path(:school_id => @school.id)) %>
 <div class="departments show">
   <h2><%= t('.details') %></h2>
   <table summary="Department detail view">

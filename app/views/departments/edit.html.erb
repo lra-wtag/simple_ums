@@ -1,8 +1,9 @@
-<%= link_to("<< Back to Departments", departments_path) %>
+<%= link_to("<< Back to Departments", departments_path(:school_id => @school.id)) %>
 <div class ="department edit">
   <h2>Update Department</h2>
-  <%= simple_form_for @department do |f| %>
+  <%= simple_form_for @department, :url => department_path(@department,:school_id => @school.id) do |f| %>
       <%= f.error_notification %>
+      <%= f.hidden_field :school_id, :school_id => @school.id  %>
       <%= f.input :name %>
       <%= f.input :position %>
       <%= f.input :head_name %>

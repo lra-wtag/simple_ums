@@ -1,6 +1,12 @@
 <div class="department index">
+  <%= link_to("<< Back to Schools", schools_path) %>
+  <div id= "showname">
+    <p class="center"><%= @school.name %></p>
+  </div>
+  </table>
   <h2>Departments</h2>
-  <%= link_to("Add New Departments", new_department_path) %>
+  <%= image_tag('plus.png', :size => '12x12', :alt => '+') %>
+  <%= link_to("Add New Departments", new_department_path(school_id: @school.id)) %>
   <br /><br />
   <table class="listing" summary="Department List">
     <tr class="header">
@@ -19,9 +25,9 @@
           <td><%= department.head_name %></td>
           <td><%= department.capacity %></td>
           <td class="actions">
-            <%= link_to("Show", department_path(department)) %>
-            <%= link_to("Edit", edit_department_path(department)) %>
-            <%= link_to("Delete", delete_department_path(department)) %>
+            <%= link_to("Show", department_path(department, :school_id => @school.id)) %>
+            <%= link_to("Edit", edit_department_path(department, :school_id => @school.id)) %>
+            <%= link_to("Delete", delete_department_path(department, :school_id => @school.id)) %>
           </td>
         </tr>
     <% end %>
