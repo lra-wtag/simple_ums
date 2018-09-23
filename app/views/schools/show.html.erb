@@ -1,0 +1,22 @@
+<%= link_to("<< Back to Schools", schools_path) %>
+<div class="schools show">
+  <h2><%= t('.details') %></h2>
+  <table summary="School detail view">
+    <tr>
+      <th>Name</th>
+      <td><%= @school.name %></td>
+    </tr>
+    <tr>
+      <th>Dean Name</th>
+      <td><%= @school.dean_name %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @school.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @school.updated_at %></td>
+    </tr>
+  </table>
+</div>

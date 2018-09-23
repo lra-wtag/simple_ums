@@ -1,0 +1,24 @@
+en:
+  schools:
+    show:
+      details: 'School Details'
+    school_create: 'School created successfully'
+    school_edit: 'School updated successfully'
+    school_delete: 'School deleted successfully!'
+  departments:
+    show:
+      details: 'Department Details'
+    dept_create: 'Department created successfully'
+    dept_edit: 'Department updated successfully'
+    dept_delete: 'Department deleted successfully!'
+  layouts:
+    application:
+      title: 'University Management System'
+
+
+
+
+
+
+
+
