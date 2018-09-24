@@ -8,14 +8,14 @@ class DepartmentsController < ApplicationController
   def show ; end
 
   def new
-    @department = Department.new(:school_id => @school.id)
+    @department = Department.new(school_id: @school.id)
   end
 
   def create
     @department = Department.new(department_params)
     if @department.save
       flash[:notice] = t('.dept_create')
-      redirect_to(departments_path(:school_id => @school.id))
+      redirect_to(departments_path( school_id: @school.id ))
     else
       render :new
     end
@@ -26,7 +26,7 @@ class DepartmentsController < ApplicationController
   def update
     if @department.update_attributes(department_params)
       flash[:notice] = t('.dept_edit')
-      redirect_to(departments_path(@department,:school_id => @school.id))
+      redirect_to(departments_path(@department, school_id: @school.id))
     else
       render :edit
     end
@@ -37,12 +37,12 @@ class DepartmentsController < ApplicationController
   def destroy
     @department.destroy
     flash[:notice] = t('.dept_delete')
-    redirect_to(departments_path(:school_id => @school.id))
+    redirect_to(departments_path( school_id: @school.id))
   end
 
   private
   def department_params
-    params.require(:department).permit(:school_id, :name, :position, :head_name, :description, :capacity)
+    params.require(:department).permit(:name, :position, :head_name, :description, :capacity, :school_id)
   end
   def find_department_id
     @department = Department.find(params[:id])
