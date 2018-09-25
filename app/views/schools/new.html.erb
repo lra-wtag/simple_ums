@@ -1,6 +1,6 @@
 <%= link_to("<< Back to Schools", schools_path) %>
 <div class ="schools new">
-  <h2>Create New School</h2>
+  <h2><%= t('schools.all.sch_new') %></h2>
   <%= simple_form_for @school do |f| %>
       <%= f.error_notification %>
       <%= f.input :name %>

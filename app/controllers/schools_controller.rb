@@ -13,7 +13,7 @@ class SchoolsController < ApplicationController
   def create
     @school = School.new(school_params)
     if @school.save
-      flash[:notice] = t('.school_create')
+      flash[:notice] = t('schools.all.sch_notice_create')
       redirect_to(schools_path)
     else
       render :new
@@ -24,7 +24,7 @@ class SchoolsController < ApplicationController
 
   def update
     if @school.update_attributes(school_params)
-      flash[:notice] = t('.school_edit')
+      flash[:notice] = t('schools.all.sch_notice_edit')
       redirect_to(schools_path(@school))
     else
       render :edit
@@ -35,7 +35,7 @@ class SchoolsController < ApplicationController
 
   def destroy
     @school.destroy
-    flash[:notice] = t('.school_delete')
+    flash[:notice] = t('schools.all.sch_notice_delete')
     redirect_to(schools_path)
   end
 

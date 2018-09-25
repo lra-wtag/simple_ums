@@ -1,9 +1,9 @@
-<%= link_to("<< Back to Schools", schools_path) %>
+<%= link_to t('shared.all.sch_back'), schools_path %>
 <div class ="schools delete">
-  <h2>Delete School</h2>
+  <h2><%= t('schools.all.sch_delete') %></h2>
   <%= simple_form_for(@school, :method => 'delete') do |f| %>
       <p class="center">Are you sure you want to permanently delete this School? </p>
       <p class="reference-name, center" ><%= f.object.name %></p>
-       <%= f.submit('Delete School') %>
+       <%= f.submit t('schools.all.sch_delete') %>
   <% end %>
 </div>

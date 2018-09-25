@@ -8,9 +8,7 @@ RSpec.describe SchoolsController, type: :controller do
   end
 
   describe 'GET #index' do
-    let!(:photo) { create(:school,
-                          name: 'Photography School')
-    }
+    let!(:photo) { create(:school, name: 'Photography School') }
 
     it 'populates an array of all schools' do
       get :index
@@ -44,6 +42,48 @@ RSpec.describe SchoolsController, type: :controller do
     it 'renders the :new template' do
       get :new
       expect(response).to render_template :new
+    end
+  end
+
+  describe 'POST #create' do
+    context 'with valid attributes' do
+      let(:valid_attributes) do
+        attributes_for(:school,
+                       name: 'CAR',
+                       dean_name: 'Jawad ',
+                       position: '9')
+      end
+
+      it 'saves the new school in the database' do
+        expect {
+          post :create, params: { school: valid_attributes }
+        }.to change(School, :count).by(1)
+      end
+
+      it 'redirects to schools#index' do
+        post :create, params: { school: valid_attributes }
+        expect(response).to redirect_to schools_path
+      end
+    end
+
+    context 'with invalid attributes' do
+      let(:invalid_attributes) do
+        attributes_for(:department,
+                       name: nil,
+                       dean_name: 'Laila',
+                       position: '3')
+      end
+
+      it 'does not save the new school in the database' do
+        expect {
+          post :create, params: { school: invalid_attributes }
+        }.not_to change(School, :count)
+      end
+
+      it 'renders the :new template' do
+        post :create, params: { school: invalid_attributes }
+        expect(response).to render_template :new
+      end
     end
   end
 

@@ -1,14 +1,14 @@
 <div class="school index">
-  <h2> Schools </h2>
+  <h2><%=t('schools.all.sch')%></h2>
   <%= image_tag('plus.png', size: '12x12', alt: '+') %>
-  <%= link_to("Add New Schools", new_school_path) %>
+  <%= link_to t('schools.all.sch_add'), new_school_path %>
   <br /><br />
   <table class="listing" summary="School List">
     <tr class="header">
-      <th>Serial No.</th>
-      <th class="center">School Name</th>
-      <th class="center">Dean Name</th>
-      <th class="center">Actions</th>
+      <th><%=t('shared.all.serial')%></th>
+      <th class="center"><%=t('schools.all.sch_name')%></th>
+      <th class="center"><%=t('schools.all.sch_dean_name')%></th>
+      <th class="center"><%=t('shared.all.actions')%></th>
     </tr>
     <% @schools.each do |school| %>
         <tr>
@@ -16,10 +16,10 @@
           <td><%= school.name %></td>
           <td><%= school.dean_name %></td>
           <td class="actions">
-            <%= link_to("View Departments", departments_path(school_id: school.id) ) %>
-            <%= link_to("Show", school_path(school) ) %>
-            <%= link_to("Edit", edit_school_path(school) ) %>
-            <%= link_to("Delete", delete_school_path(school) ) %>
+            <%= link_to t('schools.all.sch_dept'), departments_path(school_id: school.id)%>
+            <%= link_to t('shared.all.show'), school_path(school) %>
+            <%= link_to t('shared.all.edit'), edit_school_path(school) %>
+            <%= link_to t('shared.all.delete'), delete_school_path(school) %>
           </td>
         </tr>
     <% end %>

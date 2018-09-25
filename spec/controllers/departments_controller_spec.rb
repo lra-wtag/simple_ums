@@ -89,11 +89,11 @@ RSpec.describe DepartmentsController, type: :controller do
     context 'with invalid attributes' do
       let(:invalid_attributes) do
         attributes_for(:department,
-                       name: 'EEE',
-                       head_name: 'Kawser ',
-                       position: '2',
-                       description: 'Electronic and Telecommunication Engineering',
-                       capacity: '200',
+                       name: 'GM',
+                       head_name: 'Laila',
+                       position: '3',
+                       description: 'General Management',
+                       capacity: '150',
                        school_id: school1.id )
       end
 

@@ -1,24 +1,45 @@
 en:
+  shared:
+    all:
+      dept_back: '<< Back to Department List <<'
+      sch_back: '<< Back to School List <<'
+      show: 'Show'
+      edit: 'Edit'
+      delete: 'Delete'
+      actions: 'Actions'
+      serial: 'Serial No.'
+      createdat: 'Created At'
+      updatedat: 'Updated At'
   schools:
-    show:
+    all:
+      sch: 'Schools'
+      sch_add: 'Add New School(s)'
+      sch_name: 'School'
+      sch_dean_name: 'Dean'
+      sch_dept: 'View Department(s)'
+      sch_new: 'Create New School'
+      sch_update: 'School Update'
+      sch_delete: 'Delete School'
       details: 'School Details'
-    school_create: 'School created successfully'
-    school_edit: 'School updated successfully'
-    school_delete: 'School deleted successfully!'
+      sch_notice_create: 'School created successfully'
+      sch_notice_edit: 'School updated successfully'
+      sch_notice_delete: 'School deleted successfully!'
   departments:
-    show:
+    all:
+      dept: 'Departments'
+      dept_add: 'Add New Department(s)'
+      dept_name: 'Name of Department'
+      dept_description: 'Description'
+      dept_head_name: 'Head of Department'
+      dept_capacity: 'Capacity'
       details: 'Department Details'
-    dept_create: 'Department created successfully'
-    dept_edit: 'Department updated successfully'
-    dept_delete: 'Department deleted successfully!'
+      dept_new: 'Create New Department'
+      dept_update: 'Department Update'
+      dept_delete: 'Delete Department'
+      delete_message: 'Are you sure you want to delete this department?'
+      dept_notice_create: 'Department created successfully'
+      dept_notice_edit: 'Department updated successfully'
+      dept_notice_delete: 'Department deleted successfully!'
   layouts:
     application:
       title: 'University Management System'
-
-
-
-
-
-
-
-

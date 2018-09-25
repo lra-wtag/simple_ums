@@ -1,6 +1,6 @@
-<%= link_to("<< Back to Schools", schools_path) %>
+<%= link_to t('shared.all.sch_back'), schools_path %>
 <div class ="school edit">
-  <h2>Update School</h2>
+  <h2><%= t('schools.all.sch_update') %></h2>
   <%= simple_form_for @school do |f| %>
       <%= f.error_notification %>
       <%= f.input :name %>
