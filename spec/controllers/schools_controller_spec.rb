@@ -135,7 +135,7 @@ RSpec.describe SchoolsController, type: :controller do
         attributes_for(:school,
                        name: 'School of Law',
                        dean_name: nil ,
-                       position: '8')
+                       position: '5')
       end
 
       it 'does not update the new school' do

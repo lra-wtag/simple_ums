@@ -1,9 +1,9 @@
-<%= link_to t('shared.all.dept_back'), departments_path(:school_id => @school.id) %>
+<%= link_to t('shared.all.dept_back'), departments_path( school_id: @school.id ) %>
 <div class ="department edit">
   <h2><%= t('departments.all.dept_update') %></h2>
-  <%= simple_form_for @department, :url => department_path(@department,:school_id => @school.id) do |f| %>
+  <%= simple_form_for @department, url: department_path(@department,school_id: @school.id) do |f| %>
       <%= f.error_notification %>
-      <%= f.hidden_field :school_id, :school_id => @school.id  %>
+      <%= f.hidden_field :school_id, school_id: @school.id  %>
       <%= f.input :name %>
       <%= f.input :position %>
       <%= f.input :head_name %>

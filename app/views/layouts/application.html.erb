@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('.title') %></title>
+    <title><%= t('layouts.application.title') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= favicon_link_tag 'logo.png' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
   <div id="header">
-    <h1>University Management System</h1>
+    <h1><%= t('layouts.application.title') %></h1>
   </div>
 
   <div id="main">
@@ -28,8 +28,6 @@
     <div id="footer">
       <p id="copyright">&copy; myums.com </p>
     </div>
-
   </div>
-
   </body>
 </html>

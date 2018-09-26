@@ -89,7 +89,7 @@ RSpec.describe DepartmentsController, type: :controller do
     context 'with invalid attributes' do
       let(:invalid_attributes) do
         attributes_for(:department,
-                       name: 'GM',
+                       name: nil ,
                        head_name: 'Laila',
                        position: '3',
                        description: 'General Management',
@@ -102,12 +102,12 @@ RSpec.describe DepartmentsController, type: :controller do
           post :create,
                params: { department: invalid_attributes,
                          school_id: school1.id  }
-        }.to change(Department, :count)
+        }.not_to change(Department, :count)
       end
 
-      it 'redirects to departments#index' do
-        post :create, params: { department: invalid_attributes, school_id: school1.id }
-        expect(response).to redirect_to departments_path(school_id: school1.id)
+      it 'renders the :new template' do
+        post :create, params: { department: invalid_attributes }
+        expect(response).to render_template :new
       end
     end
   end
