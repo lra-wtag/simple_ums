@@ -1,6 +1,7 @@
 class Department < ApplicationRecord
   CAPACITY = *(50..550)
   belongs_to :school
+  has_many :courses
   scope :sorted, lambda { order('position ASC') }
   validates :school_id, presence: true
   validates :name, presence: true, uniqueness: true

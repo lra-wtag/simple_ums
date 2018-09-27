@@ -1,0 +1,13 @@
+<%= link_to t('shared.all.crs_back'), courses_path(department_id: @department.id) %>
+<div class ="courses new">
+  <h2><%= t('courses.all.crs_new') %></h2>
+  <%= simple_form_for @course, url: courses_path(department_id: @department.id) do |f| %>
+      <%= f.error_notification %>
+      <%= f.hidden_field :department_id, department_id: @department.id  %>
+      <%= f.input :position %>
+      <%= f.input :course_ID %>
+      <%= f.input :course_name %>
+      <%= f.input :credits %>
+      <%= f.button :submit %>
+  <% end %>
+</div>

@@ -1,0 +1,33 @@
+<div class="school index">
+  <%= link_to t('shared.all.dept_back'), departments_path(school_id: @department.school_id) %>
+  <div id= "showname">
+    <p class="center"><%= @department.name %></p>
+  </div>
+  </table>
+  <h2><%=t('courses.all.crs')%></h2>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('courses.all.crs_add'), new_course_path(department_id: @department.id) %>
+  <br /><br />
+  <table class="listing" summary="Course List">
+    <tr class="header">
+      <th><%=t('shared.all.serial')%></th>
+      <th class="center"><%=t('courses.all.crs_ID')%></th>
+      <th class="center"><%=t('courses.all.crs_name')%></th>
+      <th class="center"><%=t('courses.all.crs_credit')%></th>
+      <th class="center"><%=t('shared.all.actions')%></th>
+    </tr>
+    <% @courses.each do |course| %>
+        <tr>
+          <td><%= course.position %></td>
+          <td><%= course.course_ID %></td>
+          <td><%= course.course_name %></td>
+          <td><%= course.credits %></td>
+          <td class="actions">
+            <%= link_to t('shared.all.show'), course_path(course, department_id: @department.id) %>
+            <%= link_to t('shared.all.edit'), edit_course_path(course, department_id: @department.id) %>
+            <%= link_to t('shared.all.delete'), delete_course_path(course, department_id: @department.id) %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

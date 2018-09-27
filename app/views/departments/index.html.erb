@@ -25,6 +25,7 @@
           <td><%= department.head_name %></td>
           <td><%= department.capacity %></td>
           <td class="actions">
+            <%= link_to t('departments.all.dept_crs'), courses_path(department_id: department.id) %>
             <%= link_to t('shared.all.show'), department_path(department, school_id: @school.id) %>
             <%= link_to t('shared.all.edit'), edit_department_path(department, school_id: @school.id) %>
             <%= link_to t('shared.all.delete'), delete_department_path(department, school_id: @school.id) %>

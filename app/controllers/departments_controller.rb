@@ -1,11 +1,11 @@
 class DepartmentsController < ApplicationController
   before_action :find_school_id
-  before_action :find_department_id, only: [:show, :edit, :update, :delete, :destroy]
+  before_action :find_department, only: [:show, :edit, :update, :delete, :destroy]
   def index
     @departments = @school.departments.sorted
   end
 
-  def show ; end
+  def show; end
 
   def new
     @department = Department.new( school_id: @school.id )
@@ -44,7 +44,7 @@ class DepartmentsController < ApplicationController
   def department_params
     params.require(:department).permit(:name, :position, :head_name, :description, :capacity, :school_id)
   end
-  def find_department_id
+  def find_department
     @department = Department.find(params[:id])
   end
   def find_school_id

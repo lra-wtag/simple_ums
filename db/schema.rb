@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_20_044819) do
+ActiveRecord::Schema.define(version: 2018_09_27_080854) do
+
+  create_table "courses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "position", null: false
+    t.string "course_ID", null: false
+    t.string "course_name", null: false
+    t.integer "credits", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "department_id"
+    t.index ["department_id"], name: "index_courses_on_department_id"
+  end
 
   create_table "departments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -32,4 +43,5 @@ ActiveRecord::Schema.define(version: 2018_09_20_044819) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "courses", "departments"
 end
