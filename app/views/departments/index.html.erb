@@ -1,7 +1,7 @@
 <div class="department index">
   <%= link_to t('shared.all.sch_back'), schools_path %>
   <div id= "showname">
-    <p class="center"><%= @school.name %></p>
+    <p class="center"><% @school.name %></p>
   </div>
   </table>
   <h2><%=t('departments.all.dept')%></h2>
@@ -26,6 +26,7 @@
           <td><%= department.capacity %></td>
           <td class="actions">
             <%= link_to t('departments.all.dept_crs'), courses_path(department_id: department.id) %>
+            <%= link_to t('departments.all.dept_teacher'), teachers_path(department_id: department.id) %>
             <%= link_to t('shared.all.show'), department_path(department, school_id: @school.id) %>
             <%= link_to t('shared.all.edit'), edit_department_path(department, school_id: @school.id) %>
             <%= link_to t('shared.all.delete'), delete_department_path(department, school_id: @school.id) %>

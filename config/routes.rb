@@ -14,4 +14,9 @@ Rails.application.routes.draw do
       get :delete
     end
   end
+  resources :teachers do
+    member do
+      get :delete
+    end
+  end
 end

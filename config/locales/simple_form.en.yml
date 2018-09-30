@@ -6,4 +6,4 @@ en:
       text: 'required'
       mark: '*'
     error_notification:
-      default_message: "Please review the problems marked:"
+      default_message: "Some errors found. Please review the problems marked:"

@@ -1,7 +1,7 @@
 <div class="school index">
   <%= link_to t('shared.all.dept_back'), departments_path(school_id: @department.school_id) %>
   <div id= "showname">
-    <p class="center"><%= @department.name %></p>
+    <p class="center"><%= t('departments.all.dept_of')%><%= @department.name %></p>
   </div>
   </table>
   <h2><%=t('courses.all.crs')%></h2>

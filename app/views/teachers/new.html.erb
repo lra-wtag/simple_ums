@@ -1,0 +1,14 @@
+<%= link_to t('shared.all.tch_back'), teachers_path(department_id: @department.id) %>
+<div class ="teachers new">
+  <h2><%= t('teachers.all.tch_new') %></h2>
+  <%= simple_form_for @teacher, url: teachers_path(department_id: @department.id) do |f| %>
+      <%= f.error_notification %>
+      <%= f.hidden_field :department_id, department_id: @department.id  %>
+      <%= f.input :teacher_id, label: t('teachers.all.tch_ID') %>
+      <%= f.input :teacher_name, label: t('teachers.all.tch_name') %>
+      <%= f.input :Email, placeholder: 'userdomain.com' %>
+      <%= f.input :Contact, label: t('teachers.all.tch_contact') %>
+      <%= f.input :Designation, collection: [ "Associate Professor", "Professor", "Lecturer", "Junior Lecturer" ] %>
+      <%= f.button :submit %>
+  <% end %>
+</div>
