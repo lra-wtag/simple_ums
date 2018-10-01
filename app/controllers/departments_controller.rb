@@ -1,6 +1,6 @@
 class DepartmentsController < ApplicationController
   before_action :find_school_id
-  before_action :find_department, only: [:show, :edit, :update, :delete, :destroy]
+  before_action :find_department, only: %w[show edit update delete destroy]
   def index
     @departments = @school.departments.sorted
   end

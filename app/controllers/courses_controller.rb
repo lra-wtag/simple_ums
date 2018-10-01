@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_department_id
-  before_action :find_course, only: [:show, :edit, :update, :delete, :destroy]
+  before_action :find_course, only: %w[show edit update delete destroy]
   def index
     @courses = @department.courses.sorted
   end
@@ -42,7 +42,11 @@ class CoursesController < ApplicationController
 
   private
   def course_params
-    params.require(:course).permit(:course_ID, :course_name, :position, :credits, :department_id)
+    params.require(:course).permit(:course_ID,
+                                   :course_name,
+                                   :position,
+                                   :credits,
+                                   :department_id)
   end
   def find_course
     @course = Course.find(params[:id])

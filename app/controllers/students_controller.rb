@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :find_student, only: [:show, :edit, :update, :delete, :destroy]
+  before_action :find_student, only: %w[show edit update delete destroy]
   def index
     @students = Student.sorted
   end
