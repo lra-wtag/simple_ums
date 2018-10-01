@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_30_053706) do
+ActiveRecord::Schema.define(version: 2018_10_01_052128) do
 
   create_table "courses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "position", null: false
@@ -39,6 +39,19 @@ ActiveRecord::Schema.define(version: 2018_09_30_053706) do
     t.string "name", null: false
     t.string "dean_name", null: false
     t.integer "position", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "students", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "std_number", null: false
+    t.string "std_name", null: false
+    t.string "std_address"
+    t.string "std_email", null: false
+    t.string "std_contact"
+    t.string "std_program", null: false
+    t.string "std_dept_name", null: false
+    t.string "std_semester", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

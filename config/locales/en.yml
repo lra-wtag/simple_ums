@@ -5,6 +5,7 @@ en:
       sch_back: '<< Back to School List <<'
       crs_back: '<< Back to Course List <<'
       tch_back: '<< Back to Faculty List <<'
+      std_back: '<< Back to Student List <<'
       show: 'Show'
       edit: 'Edit'
       delete: 'Delete'
@@ -12,6 +13,9 @@ en:
       serial: 'Serial No.'
       createdat: 'Created At'
       updatedat: 'Updated At'
+      prog: 'Program'
+      dept: 'Department'
+      sem: 'Semester'
   schools:
     all:
       sch: 'Schools'
@@ -80,6 +84,24 @@ en:
           tch_notice_create: 'Faculty added successfully'
           tch_notice_edit: 'Faculty updated successfully'
           tch_notice_delete: 'Faculty deleted successfully!'
+  students:
+          all:
+            std: 'Student List'
+            std_add: 'Add New Student(s)'
+            std_name: 'Name of Student'
+            std_number: 'Student ID'
+            std_email: 'Email'
+            std_contact: 'Contact (optional)'
+            std_address: 'Address'
+            std_details: 'Student Details'
+            std_new: 'Add New Student'
+            std_update: 'Student Information Update'
+            std_delete: 'Student Deletion'
+            std_delete_message: 'Are you sure you want to delete this Student?'
+            std_notice_create: "Student added successfully"
+            std_notice_edit: 'Student updated successfully'
+            std_notice_delete: 'Student deleted successfully!'
   layouts:
     application:
       title: 'University Management System'
+

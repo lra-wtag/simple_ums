@@ -1,0 +1,16 @@
+<%= link_to t('shared.all.std_back'), students_path %>
+<div class ="students new">
+  <h2><%= t('students.all.std_new') %></h2>
+  <%= simple_form_for @student do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :std_number, label: t('students.all.std_number') %>
+      <%= f.input :std_name, label: t('students.all.std_name') %>
+      <%= f.input :std_email, placeholder: 'userdomain.com', label: t('students.all.std_email') %>
+      <%= f.input :std_contact, label: t('students.all.std_contact') %>
+      <%= f.input :std_address, label: t('students.all.std_address') %>
+      <%= f.input :std_program, label: t('shared.all.prog'), collection: %w[ Undergraduate Graduate ] %>
+      <%= f.input :std_dept_name, label: t('shared.all.dept'), collection: %w[ Accounting Economics General Management CSE EEE ETE ]  %>
+      <%= f.input :std_semester, label: t('shared.all.sem'), collection: %w[ SPR18 SUM18 AUT18 ]  %>
+      <%= f.button :submit %>
+  <% end %>
+</div>
