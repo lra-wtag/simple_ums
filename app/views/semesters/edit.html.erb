@@ -1,0 +1,11 @@
+<%= link_to t('shared.all.sem_back'), semesters_path %>
+<div class ="semesters new">
+  <h2><%= t('semesters.all.sem_update') %></h2>
+  <%= simple_form_for @semester do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :sem_ID, label: t('semesters.all.sem_id') %>
+      <%= f.input :sem_name, label: t('semesters.all.sem_name') %>
+      <%= f.input :sem_start, label: t('semesters.all.sem_start_day') %>
+      <%= f.button :submit %>
+  <% end %>
+</div>

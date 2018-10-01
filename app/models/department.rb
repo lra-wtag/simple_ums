@@ -3,6 +3,7 @@ class Department < ApplicationRecord
   belongs_to :school
   has_many :courses
   has_many :teachers
+  #has_many :semesters
   scope :sorted, lambda { order('position ASC') }
   validates :school_id, presence: true
   validates :name, presence: true, uniqueness: true

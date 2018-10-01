@@ -1,0 +1,27 @@
+<div class="semester index">
+  <h2><%=t('semesters.all.sem')%></h2>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('semesters.all.sem_add'), new_semester_path %>
+  <br /><br />
+  <table class="listing" summary="Semester List">
+    <tr class="header">
+      <th><%=t('semesters.all.sem_id')%></th>
+      <th><%=t('semesters.all.sem_name')%></th>
+      <th class="center"><%=t('semesters.all.sem_start_day')%></th>
+      <th class="center"><%=t('shared.all.actions')%></th>
+    </tr>
+    <% @semesters.each do |semester| %>
+        <tr>
+          <td><%= semester.sem_ID %></td>
+          <td><%= semester.sem_name %></td>
+          <td><%= semester.sem_start %></td>
+          <td class="actions">
+            <%= link_to t('semesters.all.sem_std'), students_path %>
+            <%= link_to t('shared.all.show'), semester_path(semester) %>
+            <%= link_to t('shared.all.edit'), edit_semester_path(semester) %>
+            <%= link_to t('shared.all.delete'), delete_semester_path(semester) %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

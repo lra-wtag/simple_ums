@@ -6,6 +6,7 @@ en:
       crs_back: '<< Back to Course List <<'
       tch_back: '<< Back to Faculty List <<'
       std_back: '<< Back to Student List <<'
+      sem_back: '<< Back to Semester List <<'
       show: 'Show'
       edit: 'Edit'
       delete: 'Delete'
@@ -101,6 +102,22 @@ en:
       std_notice_create: "Student added successfully"
       std_notice_edit: 'Student updated successfully'
       std_notice_delete: 'Student deleted successfully!'
+  semesters:
+    all:
+      sem_std: 'View Enrollments'
+      sem_add: 'Add New Semester(s)'
+      sem_id: 'Semester ID'
+      sem_name: 'Semester Name'
+      sem_start_day: 'Semester began from'
+      sem: 'Semester List'
+      sem_notice_create: "Semester added successfully"
+      sem_notice_edit: 'Semester updated successfully'
+      sem_notice_delete: 'Semester deleted successfully!'
+      sem_details: 'Semester Details'
+      sem_new: 'Add New Semester'
+      sem_update: 'Semester Information Update'
+      sem_delete: 'Semester Deletion'
+      sem_delete_message: 'Are you sure you want to delete this Semester?'
   layouts:
     application:
       title: 'University Management System'
