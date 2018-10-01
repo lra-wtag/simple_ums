@@ -1,0 +1,30 @@
+<%= link_to t('shared.all.dept_back'), departments_path( school_id: @school.id ) %>
+<div class="departments show">
+  <h2><%= t('departments.all.dept_details') %></h2>
+  <table summary="Department detail view">
+    <tr>
+      <th><%= t('departments.all.dept_name')%></th>
+      <td><%= @department.name %></td>
+    </tr>
+    <tr>
+      <th><%= t('departments.all.dept_description')%></th>
+      <td><%= @department.description %></td>
+    </tr>
+    <tr>
+      <th><%= t('departments.all.dept_head_name')%></th>
+      <td><%= @department.head_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('departments.all.dept_capacity')%></th>
+      <td><%= @department.capacity %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.createdat')%></th>
+      <td><%= @department.created_at %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.updatedat')%></th>
+      <td><%= @department.updated_at %></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,10 @@
+<%= link_to t('shared.all.dept_back'), departments_path( school_id: @school.id ) %>
+<div class ="department delete">
+  <h2><%= t('departments.all.dept_delete') %></h2>
+  <%= simple_form_for(@department, url: department_path(@department,school_id: @school.id), method: 'delete') do |f| %>
+      <p class="center"><%= t('departments.all.dept_delete_message') %></p>
+      <p class="reference-name, center" ><%= f.object.name %></p>
+      <%= f.submit t('departments.all.dept_delete') %>
+  <% end %>
+</div>
+

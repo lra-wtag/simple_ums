@@ -1,0 +1,11 @@
+<%= link_to t('shared.all.sch_back'), schools_path %>
+<div class ="schools new">
+  <h2><%= t('schools.all.sch_new') %></h2>
+  <%= simple_form_for @school do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :name %>
+      <%= f.input :dean_name %>
+      <%= f.input :position %>
+      <%= f.button :submit %>
+  <% end %>
+</div>

@@ -1,0 +1,34 @@
+<%= link_to t('shared.all.tch_back'), teachers_path(department_id: @department.id) %>
+<div class="schools show">
+  <h2><%= t('teachers.all.tch_details') %></h2>
+  <table summary="Faculty detail view">
+    <tr>
+      <th><%= t('teachers.all.tch_ID') %></th>
+      <td><%= @teacher.teacher_id %></td>
+    </tr>
+    <tr>
+      <th><%= t('teachers.all.tch_name') %></th>
+      <td><%= @teacher.teacher_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('teachers.all.tch_email') %></th>
+      <td><%= @teacher.Email %></td>
+    </tr>
+    <tr>
+      <th><%= t('teachers.all.tch_contact') %></th>
+      <td><%= @teacher.Contact %></td>
+    </tr>
+    <tr>
+      <th><%= t('teachers.all.tch_desig') %></th>
+      <td><%= @teacher.Designation %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.createdat') %></th>
+      <td><%= @teacher.created_at %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.updatedat') %></th>
+      <td><%= @teacher.updated_at %></td>
+    </tr>
+  </table>
+</div>
