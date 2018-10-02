@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_department_id
-  before_action :find_teacher, only: %w[show edit update delete destroy]
+  before_action :find_teacher, only: %i[show edit update delete destroy]
   def index
     @teachers = @department.teachers.sorted
   end

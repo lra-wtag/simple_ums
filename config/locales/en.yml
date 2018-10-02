@@ -54,6 +54,7 @@ en:
       dept_notice_delete: 'Department deleted successfully!'
   courses:
     all:
+      crs_std: 'View Enrollments'
       crs: 'Courses'
       crs_credit_message: 'Credits can be 1 or 3 only'
       crs_add: 'Add New Course(s)'
@@ -87,6 +88,7 @@ en:
       tch_notice_delete: 'Faculty deleted successfully!'
   students:
     all:
+      std_crs: 'View Courses'
       std: 'Student List'
       std_add: 'Add New Student(s)'
       std_name: 'Name of Student'
@@ -104,7 +106,6 @@ en:
       std_notice_delete: 'Student deleted successfully!'
   semesters:
     all:
-      sem_std: 'View Enrollments'
       sem_add: 'Add New Semester(s)'
       sem_id: 'Semester ID'
       sem_name: 'Semester Name'

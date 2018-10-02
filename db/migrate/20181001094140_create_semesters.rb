@@ -4,8 +4,6 @@ class CreateSemesters < ActiveRecord::Migration[5.2]
       t.string :sem_ID, null:false
       t.string :sem_name, null:false
       t.date :sem_start
-     # t.belongs_to :department, index: true
-     # t.belongs_to :student, index: true
       t.timestamps
     end
   end

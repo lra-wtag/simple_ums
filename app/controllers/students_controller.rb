@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
-  before_action :find_student, only: %w[show edit update delete destroy]
+  before_action :find_course
+  before_action :find_student, only: %i[show edit update delete destroy]
   def index
     @students = Student.sorted
   end
@@ -8,10 +9,12 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
+    #@course_enroll = CourseEnrollment.new
   end
 
   def create
     @student = Student.new(student_params)
+    #@course_enroll = CourseEnrollment(enroll_params)
     if @student.save
       flash[:notice] = t('students.all.std_notice_create')
       redirect_to(students_path)
@@ -40,6 +43,9 @@ class StudentsController < ApplicationController
   end
 
   private
+  # def enroll_params
+  #   params.require(:course_enrollment).permit(:student_id, :course_id)
+  # end
   def student_params
     params.require(:student).permit(:std_number,
                                     :std_name,
@@ -52,5 +58,10 @@ class StudentsController < ApplicationController
   end
   def find_student
     @student = Student.find(params[:id])
+  end
+  def find_course
+    if params[:course_id]
+    @course = Course.find(params[:course_id])
+    end
   end
 end

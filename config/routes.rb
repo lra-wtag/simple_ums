@@ -29,4 +29,5 @@ Rails.application.routes.draw do
       get :delete
     end
   end
+  resources :course_enrollments
 end

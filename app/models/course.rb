@@ -1,5 +1,7 @@
 class Course < ApplicationRecord
   belongs_to :department
+  has_many :course_enrollments
+  has_many :students, through: :course_enrollments
   scope :sorted, lambda { order('position ASC') }
   validates :position, presence: true, numericality: true
   validates :course_ID, presence: true, uniqueness: true

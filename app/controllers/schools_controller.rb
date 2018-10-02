@@ -1,5 +1,5 @@
 class SchoolsController < ApplicationController
-  before_action :set_school, only: %w[show edit update delete destroy]
+  before_action :set_school, only: %i[show edit update delete destroy]
   def index
     @schools = School.sorted
   end

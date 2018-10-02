@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_department_id
-  before_action :find_course, only: %w[show edit update delete destroy]
+  before_action :find_course, only: %i[show edit update delete destroy]
   def index
     @courses = @department.courses.sorted
   end

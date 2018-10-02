@@ -16,7 +16,6 @@
           <td><%= semester.sem_name %></td>
           <td><%= semester.sem_start %></td>
           <td class="actions">
-            <%= link_to t('semesters.all.sem_std'), students_path %>
             <%= link_to t('shared.all.show'), semester_path(semester) %>
             <%= link_to t('shared.all.edit'), edit_semester_path(semester) %>
             <%= link_to t('shared.all.delete'), delete_semester_path(semester) %>

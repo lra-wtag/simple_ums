@@ -1,0 +1,29 @@
+<div class="course_enrollment index">
+  <div id= "showname">
+    <p class="center"><%= @course.course_name %></p>
+  </div>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('students.all.std_add'), new_student_path(course_id: @course.id )%>
+  <br /><br />
+  <table class="listing" summary="Course List">
+    <tr>
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Program</th>
+      <th>Department</th>
+      <th><%= t('shared.all.createdat') %></th>
+      <th><%= t('shared.all.updatedat') %></th>
+    </tr>
+    <% @course_enrollments.each do |course_enrollment| %>
+        <tr>
+          <td><%= course_enrollment.student.std_number %>
+          <td><%= course_enrollment.student.std_name %>
+          <td><%= course_enrollment.student.std_program %>
+          <td><%= course_enrollment.student.std_dept_name %>
+          <td><%= course_enrollment.created_at %>
+          <td><%= course_enrollment.updated_at %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>
