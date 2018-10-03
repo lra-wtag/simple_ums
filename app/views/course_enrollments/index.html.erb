@@ -1,4 +1,5 @@
 <div class="course_enrollment index">
+  <%= link_to t('shared.all.crs_back'), courses_path(department_id: @course.department_id) %>
   <div id= "showname">
     <p class="center"><%= @course.course_name %></p>
   </div>
@@ -7,10 +8,10 @@
   <br /><br />
   <table class="listing" summary="Course List">
     <tr>
-      <th>Student ID</th>
-      <th>Student Name</th>
-      <th>Program</th>
-      <th>Department</th>
+      <th><%= t('students.all.std_number') %></th>
+      <th><%= t('students.all.std_name') %></th>
+      <th><%= t('shared.all.prog') %></th>
+      <th><%= t('shared.all.dept') %></th>
       <th><%= t('shared.all.createdat') %></th>
       <th><%= t('shared.all.updatedat') %></th>
     </tr>

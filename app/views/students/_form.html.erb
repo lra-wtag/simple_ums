@@ -1,0 +1,34 @@
+<table summary = "Student form fields">
+  <tr>
+    <th><%= t('students.all.std_number') %></th>
+    <td><%= f.text_field(:std_number)%></td>
+  </tr>
+  <tr>
+    <th><%= t('students.all.std_name') %></th>
+    <td><%=f.text_field(:std_name)%></td>
+  </tr>
+  <tr>
+    <th><%= t('students.all.std_email') %></th>
+    <td><%=f.text_field(:std_email)%></td>
+  </tr>
+  <tr>
+    <th><%= t('students.all.std_contact') %></th>
+    <td><%=f.text_field(:std_contact)%></td>
+  </tr>
+  <tr>
+    <th><%= t('students.all.std_address') %></th>
+    <td><%=f.text_field(:std_address)%></td>
+  </tr>
+  <tr>
+    <th><%= t('shared.all.prog') %></th>
+    <td><%= f.select(:std_program, Student::PROG) %></td>
+  </tr>
+  <tr>
+    <th><%= t('shared.all.dept') %></th>
+    <td><%=f.select(:std_dept_name, Student::DEPT)%></td>
+  </tr>
+  <tr>
+    <th><%= t('shared.all.sem') %></th>
+    <td><%=f.select(:std_semester, Student::SEM)%></td>
+  </tr>
+</table>

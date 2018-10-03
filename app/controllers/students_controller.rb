@@ -9,15 +9,14 @@ class StudentsController < ApplicationController
 
   def new
     @student = Student.new
-    #@course_enroll = CourseEnrollment.new
   end
 
   def create
     @student = Student.new(student_params)
-    #@course_enroll = CourseEnrollment(enroll_params)
+    @student = @course.students.create(student_params)
     if @student.save
       flash[:notice] = t('students.all.std_notice_create')
-      redirect_to(students_path)
+      redirect_to(course_enrollments_path(course_id: @course.id))
     else
       render :new
     end
@@ -43,9 +42,6 @@ class StudentsController < ApplicationController
   end
 
   private
-  # def enroll_params
-  #   params.require(:course_enrollment).permit(:student_id, :course_id)
-  # end
   def student_params
     params.require(:student).permit(:std_number,
                                     :std_name,

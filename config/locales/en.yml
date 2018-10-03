@@ -7,6 +7,7 @@ en:
       tch_back: '<< Back to Faculty List <<'
       std_back: '<< Back to Student List <<'
       sem_back: '<< Back to Semester List <<'
+      crs_enroll_back: '<< Back to Enrollment List <<'
       show: 'Show'
       edit: 'Edit'
       delete: 'Delete'
@@ -54,6 +55,7 @@ en:
       dept_notice_delete: 'Department deleted successfully!'
   courses:
     all:
+      crs_enroll: 'Total Enrolled'
       crs_std: 'View Enrollments'
       crs: 'Courses'
       crs_credit_message: 'Credits can be 1 or 3 only'
