@@ -13,8 +13,8 @@ class StudentsController < ApplicationController
 
   def create
     @student = Student.new(student_params)
-    @student = @course.students.create(student_params)
     if @student.save
+      @course.students << @student
       flash[:notice] = t('students.all.std_notice_create')
       redirect_to(course_enrollments_path(course_id: @course.id))
     else
@@ -36,9 +36,9 @@ class StudentsController < ApplicationController
   def delete ; end
 
   def destroy
-    @student.destroy
+    @course.students.destroy(@student)
     flash[:notice] = t('students.all.std_notice_delete')
-    redirect_to(students_path)
+    redirect_to(course_enrollments_path(course_id: @course.id))
   end
 
   private

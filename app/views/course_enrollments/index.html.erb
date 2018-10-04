@@ -11,18 +11,17 @@
       <th><%= t('students.all.std_number') %></th>
       <th><%= t('students.all.std_name') %></th>
       <th><%= t('shared.all.prog') %></th>
-      <th><%= t('shared.all.dept') %></th>
-      <th><%= t('shared.all.createdat') %></th>
-      <th><%= t('shared.all.updatedat') %></th>
+      <th><%= t('shared.all.actions') %></th>
     </tr>
     <% @course_enrollments.each do |course_enrollment| %>
         <tr>
           <td><%= course_enrollment.student.std_number %>
           <td><%= course_enrollment.student.std_name %>
           <td><%= course_enrollment.student.std_program %>
-          <td><%= course_enrollment.student.std_dept_name %>
-          <td><%= course_enrollment.created_at %>
-          <td><%= course_enrollment.updated_at %>
+          </td>
+          <td class="actions">
+            <%= link_to t('shared.all.show'), course_enrollment_path(course_enrollment, course_id: @course.id) %>
+            <%= link_to t('shared.all.delete'), delete_student_path(course_enrollment.student, course_id: @course.id) %>
           </td>
         </tr>
     <% end %>

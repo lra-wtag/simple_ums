@@ -1,9 +1,14 @@
 class CourseEnrollmentsController < ApplicationController
   before_action :find_student
   before_action :find_course
+  before_action :find_course_enroll, only: %i[show edit delete]
   def index
     @course_enrollments = @course.course_enrollments.sorted
   end
+
+  def show; end
+
+  def delete; end
 
   private
   def find_course_enroll

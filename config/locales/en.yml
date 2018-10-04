@@ -93,7 +93,7 @@ en:
       std_crs: 'View Courses'
       std: 'Student List'
       std_add: 'Add New Student(s)'
-      std_name: 'Name of Student'
+      std_name: 'Student Name'
       std_number: 'Student ID'
       std_email: 'Email'
       std_contact: 'Contact (optional)'

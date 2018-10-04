@@ -1,0 +1,41 @@
+<%= link_to t('shared.all.crs_enroll_back'), course_enrollments_path(course_id: @course.id) %>
+<div id= "showname">
+  <p class="center"><%= @course.course_name %></p>
+</div>
+<div class="students show">
+  <h2><%= t('students.all.std_details') %></h2>
+  <table summary="Student detail view">
+    <tr>
+      <th><%= t('students.all.std_number') %></th>
+      <td><%= @course_enrollment.student.std_number %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_name') %></th>
+      <td><%= @course_enrollment.student.std_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_email') %></th>
+      <td><%= @course_enrollment.student.std_email %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_contact') %></th>
+      <td><%= @course_enrollment.student.std_contact %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_address') %></th>
+      <td><%= @course_enrollment.student.std_address %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.prog') %></th>
+      <td><%= @course_enrollment.student.std_program %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.dept') %></th>
+      <td><%= @course_enrollment.student.std_dept_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.sem') %></th>
+      <td><%= @course_enrollment.student.std_semester %></td>
+    </tr>
+  </table>
+</div>

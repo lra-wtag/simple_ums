@@ -1,16 +1,5 @@
 <%= link_to t('shared.all.crs_enroll_back'), course_enrollments_path( course_id: @course.id ) %>
 <div class ="students new">
   <h2><%= t('students.all.std_new') %></h2>
-  <%= simple_form_for @student, url: students_path(course_id: @course.id) do |f| %>
-      <%= f.error_notification %>
-      <%= f.input :std_number, label: t('students.all.std_number') %>
-      <%= f.input :std_name, label: t('students.all.std_name') %>
-      <%= f.input :std_email, placeholder: 'userdomain.com', label: t('students.all.std_email') %>
-      <%= f.input :std_contact, label: t('students.all.std_contact') %>
-      <%= f.input :std_address, label: t('students.all.std_address') %>
-      <%= f.input :std_program, label: t('shared.all.prog'), collection: (Student::PROG) %>
-      <%= f.input :std_dept_name, label: t('shared.all.dept'), collection: (Student::DEPT) %>
-      <%= f.input :std_semester, label: t('shared.all.sem'), collection: (Student::SEM) %>
-      <%= f.button :submit %>
-  <% end %>
+  <%= render 'form', student: @student %>
 </div>

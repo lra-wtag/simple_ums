@@ -1,34 +1,12 @@
-<table summary = "Student form fields">
-  <tr>
-    <th><%= t('students.all.std_number') %></th>
-    <td><%= f.text_field(:std_number)%></td>
-  </tr>
-  <tr>
-    <th><%= t('students.all.std_name') %></th>
-    <td><%=f.text_field(:std_name)%></td>
-  </tr>
-  <tr>
-    <th><%= t('students.all.std_email') %></th>
-    <td><%=f.text_field(:std_email)%></td>
-  </tr>
-  <tr>
-    <th><%= t('students.all.std_contact') %></th>
-    <td><%=f.text_field(:std_contact)%></td>
-  </tr>
-  <tr>
-    <th><%= t('students.all.std_address') %></th>
-    <td><%=f.text_field(:std_address)%></td>
-  </tr>
-  <tr>
-    <th><%= t('shared.all.prog') %></th>
-    <td><%= f.select(:std_program, Student::PROG) %></td>
-  </tr>
-  <tr>
-    <th><%= t('shared.all.dept') %></th>
-    <td><%=f.select(:std_dept_name, Student::DEPT)%></td>
-  </tr>
-  <tr>
-    <th><%= t('shared.all.sem') %></th>
-    <td><%=f.select(:std_semester, Student::SEM)%></td>
-  </tr>
-</table>
+<%= simple_form_for @student, url: students_path(course_id: @course.id) do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :std_number, label: t('students.all.std_number') %>
+    <%= f.input :std_name, label: t('students.all.std_name') %>
+    <%= f.input :std_email, placeholder: 'userdomain.com', label: t('students.all.std_email') %>
+    <%= f.input :std_contact, label: t('students.all.std_contact') %>
+    <%= f.input :std_address, label: t('students.all.std_address') %>
+    <%= f.input :std_program, label: t('shared.all.prog'), collection: (Student::PROG), selected: 1 %>
+    <%= f.input :std_dept_name, label: t('shared.all.dept'), collection: (Student::DEPT), selected: 1 %>
+    <%= f.input :std_semester, label: t('shared.all.sem'), collection: (Student::SEM), selected: 1 %>
+    <%= f.button :submit %>
+<% end %>
