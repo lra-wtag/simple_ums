@@ -1,0 +1,47 @@
+en:
+  shared:
+    all:
+      dept_back: '<< Back to Department List <<'
+      sch_back: '<< Back to School List <<'
+      show: 'Show'
+      edit: 'Edit'
+      delete: 'Delete'
+      actions: 'Actions'
+      serial: 'Serial No.'
+      createdat: 'Created At'
+      updatedat: 'Updated At'
+  schools:
+    all:
+      sch: 'Schools'
+      sch_add: 'Add New School(s)'
+      sch_name: 'School'
+      sch_dean_name: 'Dean'
+      sch_dept: 'View Department(s)'
+      sch_new: 'Create New School'
+      sch_update: 'School Update'
+      sch_delete: 'Delete School'
+      sch_delete_message: 'Are you sure you want to delete this School?'
+      sch_details: 'School Details'
+      sch_notice_create: 'School created successfully'
+      sch_notice_edit: 'School updated successfully'
+      sch_notice_delete: 'School deleted successfully!'
+  departments:
+    all:
+      dept: 'Departments'
+      dept_capacity_message: 'minimum capacity is 50 and maximum capacity is 550'
+      dept_add: 'Add New Department(s)'
+      dept_name: 'Name of Department'
+      dept_description: 'Description'
+      dept_head_name: 'Head of Department'
+      dept_capacity: 'Capacity'
+      dept_details: 'Department Details'
+      dept_new: 'Create New Department'
+      dept_update: 'Department Update'
+      dept_delete: 'Delete Department'
+      dept_delete_message: 'Are you sure you want to delete this Department?'
+      dept_notice_create: 'Department created successfully'
+      dept_notice_edit: 'Department updated successfully'
+      dept_notice_delete: 'Department deleted successfully!'
+  layouts:
+    application:
+      title: 'University Management System'
