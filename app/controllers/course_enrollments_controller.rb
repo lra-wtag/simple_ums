@@ -8,8 +8,6 @@ class CourseEnrollmentsController < ApplicationController
 
   def show; end
 
-  def delete; end
-
   private
   def find_course_enroll
     @course_enrollment = CourseEnrollment.find(params[:id])

@@ -1,12 +1,10 @@
-<%= simple_form_for @student, url: students_path(course_id: @course.id) do |f| %>
-    <%= f.error_notification %>
-    <%= f.input :std_number, label: t('students.all.std_number') %>
-    <%= f.input :std_name, label: t('students.all.std_name') %>
-    <%= f.input :std_email, placeholder: 'userdomain.com', label: t('students.all.std_email') %>
-    <%= f.input :std_contact, label: t('students.all.std_contact') %>
-    <%= f.input :std_address, label: t('students.all.std_address') %>
-    <%= f.input :std_program, label: t('shared.all.prog'), collection: (Student::PROG), selected: 1 %>
-    <%= f.input :std_dept_name, label: t('shared.all.dept'), collection: (Student::DEPT), selected: 1 %>
-    <%= f.input :std_semester, label: t('shared.all.sem'), collection: (Student::SEM), selected: 1 %>
-    <%= f.button :submit %>
-<% end %>
+<%= f.error_notification %>
+<%= f.input :std_number, label: t('students.all.std_number') %>
+<%= f.input :std_name, label: t('students.all.std_name') %>
+<%= f.input :std_email, placeholder: 'userdomain.com', label: t('students.all.std_email') %>
+<%= f.input :std_contact, label: t('students.all.std_contact') %>
+<%= f.input :std_address, label: t('students.all.std_address') %>
+<%= f.input :std_program, label: t('shared.all.prog'), collection: (Student::PROG), selected: 1 %>
+<%= f.input :std_dept_name, label: t('shared.all.dept'), collection: (Student::DEPT), selected: 1 %>
+<%= f.input :std_semester, label: t('shared.all.sem'), collection: (Student::SEM), selected: 1 %>
+<%= f.button :submit %>
