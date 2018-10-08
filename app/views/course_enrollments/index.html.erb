@@ -1,0 +1,29 @@
+<div class="course_enrollment index">
+  <%= link_to t('shared.all.crs_back'), courses_path(department_id: @course.department_id) %>
+  <div id= "showname">
+    <p class="center"><%= @course.course_name %></p>
+  </div>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('students.all.std_add'), new_student_path(course_id: @course.id )%>
+  <br /><br />
+  <table class="listing" summary="Course List">
+    <tr>
+      <th><%= t('students.all.std_number') %></th>
+      <th><%= t('students.all.std_name') %></th>
+      <th><%= t('shared.all.prog') %></th>
+      <th><%= t('shared.all.actions') %></th>
+    </tr>
+    <% @course_enrollments.each do |course_enrollment| %>
+        <tr>
+          <td><%= course_enrollment.student.std_number %>
+          <td><%= course_enrollment.student.std_name %>
+          <td><%= course_enrollment.student.std_program %>
+          </td>
+          <td class="actions">
+            <%= link_to t('shared.all.show'), course_enrollment_path(course_enrollment, course_id: @course.id) %>
+            <%= link_to t('shared.all.delete'), delete_student_path(course_enrollment.student, course_id: @course.id) %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

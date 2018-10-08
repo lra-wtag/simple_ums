@@ -1,0 +1,9 @@
+<%= link_to t('shared.all.crs_enroll_back'), course_enrollments_path(course_id: @course.id) %>
+<div class ="students delete">
+  <h2><%= t('students.all.std_delete') %></h2>
+  <%= simple_form_for(@student, url: student_path(@student, course_id: @course.id), method: 'delete') do |f| %>
+      <p class="center"><%= t('students.all.std_delete_message') %></p>
+      <p class="reference-name, center" ><%= f.object.std_name %></p>
+      <%= f.submit t('students.all.std_delete') %>
+  <% end %>
+</div>

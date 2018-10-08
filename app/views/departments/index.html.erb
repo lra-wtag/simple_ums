@@ -1,0 +1,37 @@
+<div class="department index">
+  <%= link_to t('shared.all.sch_back'), schools_path %>
+  <div id= "showname">
+    <p class="center"><% @school.name %></p>
+  </div>
+  </table>
+  <h2><%=t('departments.all.dept')%></h2>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('departments.all.dept_add'), new_department_path(school_id: @school.id) %>
+  <br /><br />
+  <table class="listing" summary="Department List">
+    <tr class="header">
+      <th><%=t('shared.all.serial')%></th>
+      <th class="center"><%=t('departments.all.dept_name')%></th>
+      <th class="center"><%=t('departments.all.dept_description')%></th>
+      <th class="center"><%=t('departments.all.dept_head_name')%></th>
+      <th class="center"><%=t('departments.all.dept_capacity')%></th>
+      <th class="center"><%=t('shared.all.actions')%></th>
+    </tr>
+    <% @departments.each do |department| %>
+        <tr>
+          <td><%= department.position %></td>
+          <td><%= department.name %></td>
+          <td><%= department.description %></td>
+          <td><%= department.head_name %></td>
+          <td><%= department.capacity %></td>
+          <td class="actions">
+            <%= link_to t('departments.all.dept_crs'), courses_path(department_id: department.id) %>
+            <%= link_to t('departments.all.dept_teacher'), teachers_path(department_id: department.id) %>
+            <%= link_to t('shared.all.show'), department_path(department, school_id: @school.id) %>
+            <%= link_to t('shared.all.edit'), edit_department_path(department, school_id: @school.id) %>
+            <%= link_to t('shared.all.delete'), delete_department_path(department, school_id: @school.id) %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

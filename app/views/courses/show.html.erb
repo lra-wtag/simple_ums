@@ -1,0 +1,26 @@
+<%= link_to t('shared.all.crs_back'), courses_path(department_id: @department.id) %>
+<div class="schools show">
+  <h2><%= t('courses.all.crs_details') %></h2>
+  <table summary="Course detail view">
+    <tr>
+      <th><%= t('courses.all.crs_ID') %></th>
+      <td><%= @course.course_ID %></td>
+    </tr>
+    <tr>
+      <th><%= t('courses.all.crs_name') %></th>
+      <td><%= @course.course_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('courses.all.crs_credit') %></th>
+      <td><%= @course.credits %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.createdat') %></th>
+      <td><%= @course.created_at %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.updatedat') %></th>
+      <td><%= @course.updated_at %></td>
+    </tr>
+  </table>
+</div>

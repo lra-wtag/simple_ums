@@ -1,0 +1,7 @@
+<%= link_to t('shared.all.crs_enroll_back'), course_enrollments_path( course_id: @course.id ) %>
+<div class ="students new">
+  <h2><%= t('students.all.std_new') %></h2>
+  <%= simple_form_for @student, url: students_path(course_id: @course.id) do |f| %>
+  <%= render(partial: 'form', locals: {f: f}) %>
+  <% end %>
+</div>

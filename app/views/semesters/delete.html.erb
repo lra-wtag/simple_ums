@@ -1,0 +1,9 @@
+<%= link_to t('shared.all.sem_back'), semesters_path %>
+<div class ="students delete">
+  <h2><%= t('semesters.all.sem_delete') %></h2>
+  <%= simple_form_for(@semester, method: 'delete') do |f| %>
+      <p class="center"><%= t('semesters.all.sem_delete_message') %></p>
+      <p class="reference-name, center" ><%= f.object.sem_name %></p>
+      <%= f.submit t('semesters.all.sem_delete') %>
+  <% end %>
+</div>

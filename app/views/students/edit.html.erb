@@ -1,0 +1,7 @@
+<%= link_to t('shared.all.std_back'), students_path %>
+<div class ="students new">
+  <h2><%= t('students.all.std_update') %></h2>
+  <%= simple_form_for @student do |f| %>
+  <%= render(partial: 'form', locals: {f: f}) %>
+  <% end %>
+</div>

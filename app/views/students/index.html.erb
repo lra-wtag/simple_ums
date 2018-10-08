@@ -1,0 +1,28 @@
+<div class="student index">
+  <h2><%=t('students.all.std')%></h2>
+  <%= image_tag('plus.png', size: '12x12', alt: '+') %>
+  <%= link_to t('students.all.std_add'), new_student_path %>
+  <br /><br />
+  <table class="listing" summary="Student List">
+    <tr class="header">
+      <th><%=t('students.all.std_number')%></th>
+      <th><%=t('students.all.std_name')%></th>
+      <th class="center"><%=t('students.all.std_email')%></th>
+      <th class="center"><%=t('students.all.std_contact')%></th>
+      <th class="center"><%=t('shared.all.actions')%></th>
+    </tr>
+    <% @students.each do |student| %>
+        <tr>
+          <td><%= student.std_number %></td>
+          <td><%= student.std_name %></td>
+          <td><%= student.std_email %></td>
+          <td><%= student.std_contact %></td>
+          <td class="actions">
+            <%= link_to t('shared.all.show'), student_path(student) %>
+            <%= link_to t('shared.all.edit'), edit_student_path(student) %>
+            <%= link_to t('shared.all.delete'), delete_student_path(student) %>
+          </td>
+        </tr>
+    <% end %>
+  </table>
+</div>
