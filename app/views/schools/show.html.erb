@@ -1,0 +1,22 @@
+<%= link_to t('shared.all.sch_back'), schools_path %>
+<div class="schools show">
+  <h2><%= t('schools.all.sch_details') %></h2>
+  <table summary="School detail view">
+    <tr>
+      <th><%= t('schools.all.sch_name') %></th>
+      <td><%= @school.name %></td>
+    </tr>
+    <tr>
+      <th><%= t('schools.all.sch_dean_name') %></th>
+      <td><%= @school.dean_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.createdat') %></th>
+      <td><%= @school.created_at %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.updatedat') %></th>
+      <td><%= @school.updated_at %></td>
+    </tr>
+  </table>
+</div>

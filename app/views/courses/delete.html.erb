@@ -1,0 +1,10 @@
+<%= link_to t('shared.all.crs_back'), courses_path(department_id: @department.id) %>
+<div class ="courses delete">
+  <h2><%= t('courses.all.crs_delete') %></h2>
+  <%= simple_form_for(@course, url: course_path(@course, department_id: @department.id), method: 'delete') do |f| %>
+      <p class="center"><%= t('courses.all.crs_delete_message') %></p>
+      <p class="reference-name, center" ><%= f.object.course_name %></p>
+      <%= f.submit t('courses.all.crs_delete') %>
+  <% end %>
+</div>
+

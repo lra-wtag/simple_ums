@@ -1,0 +1,9 @@
+<%= link_to t('shared.all.tch_back'), teachers_path(department_id: @department.id) %>
+<div class ="faculty delete">
+  <h2><%= t('teachers.all.tch_delete') %></h2>
+  <%= simple_form_for(@teacher, url: teacher_path(@teacher, department_id: @department.id), method: 'delete') do |f| %>
+      <p class="center"><%= t('teachers.all.tch_delete_message') %></p>
+      <p class="reference-name, center" ><%= f.object.teacher_name %></p>
+      <%= f.submit t('teachers.all.tch_delete') %>
+  <% end %>
+</div>

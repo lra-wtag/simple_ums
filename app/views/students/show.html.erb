@@ -1,0 +1,47 @@
+<%= link_to t('shared.all.std_back'), students_path %>
+<div class="students show">
+  <h2><%= t('students.all.std_details') %></h2>
+  <table summary="Student detail view">
+    <tr>
+      <th><%= t('students.all.std_number') %></th>
+      <td><%= @student.std_number %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_name') %></th>
+      <td><%= @student.std_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_email') %></th>
+      <td><%= @student.std_email %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_contact') %></th>
+      <td><%= @student.std_contact %></td>
+    </tr>
+    <tr>
+      <th><%= t('students.all.std_address') %></th>
+      <td><%= @student.std_address %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.prog') %></th>
+      <td><%= @student.std_program %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.dept') %></th>
+      <td><%= @student.std_dept_name %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.sem') %></th>
+      <td><%= @student.std_semester %></td>
+    </tr>
+
+    <tr>
+      <th><%= t('shared.all.createdat') %></th>
+      <td><%= @student.created_at %></td>
+    </tr>
+    <tr>
+      <th><%= t('shared.all.updatedat') %></th>
+      <td><%= @student.updated_at %></td>
+    </tr>
+  </table>
+</div>
